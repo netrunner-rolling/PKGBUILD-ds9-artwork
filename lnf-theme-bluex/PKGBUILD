@@ -1,0 +1,19 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=lnf-theme-bluex
+pkgver=1.0
+pkgrel=1
+pkgdesc="BlueX look and feel theme"
+arch=('any')
+url='https://github.com/ds9-artwork/lnf-theme-bluex'
+license=('GPL')
+groups=('ds9-artwork')
+makedepends=('git')
+source=('git://github.com/ds9-artwork/lnf-theme-bluex')
+md5sums=('SKIP')
+
+package() {
+  cd $srcdir/$pkgname
+  cp -aR usr $pkgdir/
+}

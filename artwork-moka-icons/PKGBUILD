@@ -1,0 +1,19 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=artwork-moka-icons
+pkgver=1.0
+pkgrel=1
+pkgdesc="Moka icon theme"
+arch=('any')
+url='https://github.com/ds9-artwork/artwork-moka-icons'
+license=('GPL')
+groups=('ds9-artwork')
+makedepends=('git')
+source=('git://github.com/ds9-artwork/artwork-moka-icons')
+md5sums=('SKIP')
+
+package() {
+  cd $srcdir/$pkgname
+  cp -aR usr $pkgdir/
+}

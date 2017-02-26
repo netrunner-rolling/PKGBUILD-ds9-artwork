@@ -1,0 +1,19 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=desktop-theme-diamond
+pkgver=1.0
+pkgrel=1
+pkgdesc="Diamond Plasma Theme"
+arch=('any')
+url='https://github.com/ds9-artwork/desktop-theme-diamond'
+license=('GPL')
+groups=('ds9-artwork')
+makedepends=('git')
+source=('git://github.com/ds9-artwork/desktop-theme-diamond')
+md5sums=('SKIP')
+
+package() {
+  cd $srcdir/$pkgname
+  cp -aR usr $pkgdir/
+}

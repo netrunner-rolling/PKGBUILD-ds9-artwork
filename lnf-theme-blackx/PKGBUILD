@@ -1,0 +1,19 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=lnf-theme-blackx
+pkgver=1.0
+pkgrel=1
+pkgdesc="BlackX look and feel theme"
+arch=('any')
+url='https://github.com/ds9-artwork/lnf-theme-blackx'
+license=('GPL')
+groups=('ds9-artwork')
+makedepends=('git')
+source=('git://github.com/ds9-artwork/lnf-theme-blackx')
+md5sums=('SKIP')
+
+package() {
+  cd $srcdir/$pkgname
+  cp -aR usr $pkgdir/
+}

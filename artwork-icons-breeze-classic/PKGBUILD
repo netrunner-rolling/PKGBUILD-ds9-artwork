@@ -1,0 +1,19 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=artwork-icons-breeze-classic
+pkgver=1.0
+pkgrel=1
+pkgdesc="Clasic version of the breeze iconset"
+arch=('any')
+url='https://github.com/ds9-artwork/artwork-icons-breeze-classic'
+license=('GPL')
+groups=('ds9-artwork')
+makedepends=('git')
+source=('git://github.com/ds9-artwork/artwork-icons-breeze-classic')
+md5sums=('SKIP')
+
+package() {
+  cd $srcdir/$pkgname
+  cp -aR usr $pkgdir/
+}

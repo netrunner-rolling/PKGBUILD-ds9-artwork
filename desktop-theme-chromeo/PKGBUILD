@@ -1,0 +1,19 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=desktop-theme-chromeo
+pkgver=1.0
+pkgrel=1
+pkgdesc="Chromeo Plasma theme"
+arch=('any')
+url='https://github.com/ds9-artwork/desktop-theme-chromeo'
+license=('GPL')
+groups=('ds9-artwork')
+makedepends=('git')
+source=('git://github.com/ds9-artwork/desktop-theme-chromeo')
+md5sums=('SKIP')
+
+package() {
+  cd $srcdir/$pkgname
+  cp -aR usr $pkgdir/
+}

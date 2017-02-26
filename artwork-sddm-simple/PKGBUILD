@@ -1,0 +1,25 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=artwork-sddm-simple
+pkgver=1.0
+pkgrel=1
+pkgdesc="Simple SDDM theme from Netrunner Core"
+arch=('any')
+url='https://github.com/ds9-artwork/artwork-sddm-simple'
+license=('GPL')
+groups=('ds9-artwork')
+makedepends=('git')
+source=('git://github.com/ds9-artwork/artwork-sddm-simple')
+md5sums=('SKIP')
+
+prepare() {
+  cd $srcdir/$pkgname
+  mkdir -p usr/share/sddm/themes
+  mv sddm-simple usr/share/sddm/themes
+}
+
+package() {
+  cd $srcdir/$pkgname
+  cp -aR usr $pkgdir/
+}
