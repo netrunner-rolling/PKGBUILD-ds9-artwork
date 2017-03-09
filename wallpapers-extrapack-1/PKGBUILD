@@ -4,7 +4,7 @@
 pkgname=wallpapers-extrapack-1
 pkgver=1.0
 pkgrel=1
-pkgdesc="Extra Wallpapers"
+pkgdesc="Additional Wallpapers Pack 1"
 arch=('any')
 url='https://github.com/ds9-artwork/wallpapers-extrapack-1'
 license=('GPL')
