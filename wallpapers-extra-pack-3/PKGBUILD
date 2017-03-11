@@ -13,6 +13,12 @@ makedepends=('git')
 source=('git://github.com/ds9-artwork/wallpapers-extra-pack-3')
 md5sums=('SKIP')
 
+prepare() {
+  cd $srcdir/$pkgname
+  mkdir -p usr/share/wallpapers/
+  mv wallpapers-extra-pack-3 usr/share/wallpapers/
+}
+
 package() {
   cd $srcdir/$pkgname
   cp -aR usr $pkgdir/
