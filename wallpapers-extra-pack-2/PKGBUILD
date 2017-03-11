@@ -1,16 +1,16 @@
 # $Id$
 # Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
 
-pkgname=wallpapers-extrapack-2
-pkgver=1.0
+pkgname=wallpapers-extra-pack-2
+pkgver=$(date +%Y.%m)
 pkgrel=1
 pkgdesc="Additional Wallpapers Pack 2"
 arch=('any')
-url='https://github.com/ds9-artwork/wallpapers-extrapack-2'
+url='https://github.com/ds9-artwork/wallpapers-extra-pack-2'
 license=('GPL')
 groups=('ds9-artwork')
 makedepends=('git')
-source=('git://github.com/ds9-artwork/wallpapers-extrapack-2')
+source=('git://github.com/ds9-artwork/wallpapers-extra-pack-2')
 md5sums=('SKIP')
 
 package() {
