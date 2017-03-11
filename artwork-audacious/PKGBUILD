@@ -2,7 +2,7 @@
 # Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
 
 pkgname=artwork-audacious
-pkgver=1.0
+pkgver=$(date +%Y.%m)
 pkgrel=1
 pkgdesc="Skins for audacious"
 arch=('any')

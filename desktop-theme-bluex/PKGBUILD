@@ -2,7 +2,7 @@ $Id$
 # Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
 
 pkgname=desktop-theme-bluex
-pkgver=1.0
+pkgver=$(date +%Y.%m)
 pkgrel=1
 pkgdesc="Bluex Plasma Theme"
 arch=('any')

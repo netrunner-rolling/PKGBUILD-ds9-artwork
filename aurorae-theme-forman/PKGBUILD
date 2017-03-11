@@ -2,7 +2,7 @@
 # Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
 
 pkgname=aurorae-theme-forman
-pkgver=1.0
+pkgver=$(date +%Y.%m)
 pkgrel=1
 pkgdesc="FormaN theme for aurorae"
 arch=('any')

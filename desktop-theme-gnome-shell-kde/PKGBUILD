@@ -2,7 +2,7 @@
 # Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
 
 pkgname=desktop-theme-gnome-shell-kde
-pkgver=1.0
+pkgver=$(date +%Y.%m)
 pkgrel=1
 pkgdesc="GnomeShell KDE Plasma Theme"
 arch=('any')

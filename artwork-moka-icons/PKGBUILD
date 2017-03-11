@@ -2,7 +2,7 @@
 # Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
 
 pkgname=artwork-moka-icons
-pkgver=1.0
+pkgver=$(date +%Y.%m)
 pkgrel=1
 pkgdesc="Moka icon theme"
 arch=('any')
