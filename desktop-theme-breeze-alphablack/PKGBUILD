@@ -1,10 +1,10 @@
-$Id$
+# $Id$
 # Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
 
 pkgname=desktop-theme-breeze-alphablack
 pkgver=$(date +%Y.%m)
-pkgrel=1
-pkgdesc="A semi-transparent black theme based on top of the default Breeze theme plus alphablack control widget"
+pkgrel=2
+pkgdesc="A semi-transparent black theme based on top of the default Breeze theme"
 arch=('any')
 url='https://github.com/netrunner-rolling/desktop-theme-breeze-alphablack'
 license=('GPL')
